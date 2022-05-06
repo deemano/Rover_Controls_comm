@@ -2,48 +2,43 @@
     CONSOLE APPLICATION : Rover_Control_commands Project Overview
 ========================================================================
 
-Things to be done:
-1. Integrate IR sensor readings and map those into real distance
-2. Option to edit rove LCD screen
-3. Option to increese speed (from 30 default by a 10th until 100 max)
-4. option to turn on Lights (8 LED front lights)
-5. Maybe the option to memorize turns and to use those to turn back
-6. Apply graphics to all app (preferable ImGUI)
+//  Integrations:
+
+    1. Objects and Classes                      ✓
+    2. Inheritance                              ✓
+    3. Polymorphism - run-time func overr       ✓
+    4. Exception Handling - Try/throw/catch     ✓
+    5. Functions                                ✓
+    6. Arrays, Strings and Vectors              ✓
+    7. Pointers and References                  ✓
+    8. Graphics libs OpenGL, Vulkan, ImGui      ✓
 
 
-AppWizard has created this Rover_Control_commands application for you.
+//  Implemented features:
 
-This file contains a summary of what you will find in each of the files that
-make up your Rover_Control_commands application.
+    1. Autoscan & autoselect device COM port                        ✓
+    2. IR sensors data & distance to objects generation             ✓
+    3. Light sensor - detect edges / surface limits                 ✓
+    4. Light sensor - detect ambiental light                        ✓
+    5. 3D Accelerometer positioning of rover in XYZ                 ✓
+    6. Compass bearing data - position in ref to mag. N pole        ✓
+    7. Encoders data read to determine distance driven              ✓
+    8. Speed calculation via encoders                               ✓
+    9. Set LCD Text                                                 ✓
+    10. LED On/Off commands                                         ✓
+    11. Objects collision & edge stops                              ✓
+    12. Sounds                                                      ✓
+    13. Left-to-right switch main driving commands                  ✓
+    14. Multi-purpose keypress driving commands                     ✓
+    15. User modes: Normal & Demo (without rover)                   ✓
+    16. Auto-turn 180 degress                                       ✓
+    17. Dynamic GUI (not linked yet)                                ✓
+    
+//  Features in progress:
 
+    1. Auto-explore surroundings
+    2. Turn Home command (follow the same path)
+    3. Link GUI to commands and data
 
-Rover_Control_commands.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-Rover_Control_commands.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-Rover_Control_commands.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Rover_Control_commands.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
 
 /////////////////////////////////////////////////////////////////////////////
